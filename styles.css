@@ -61,12 +61,14 @@ nav {
     
     width: 100%;
     margin: 0;
+    //background-color: purple;
     
 }
 
 ul {
     
     width: 100%;
+    background-color: inherit;
 }
 
 nav ul {
@@ -83,21 +85,23 @@ nav ul {
 
 ul.nav.navbar-nav li a:hover {
     
-    background-color: green;
+    background-color: black;
+    font-size: 2rem;
+    color: white;
 }
 
 nav li a {
     
 font-size: 1.3rem;
-    color: white;
-    text-transform: uppercase;
+color: white;
+text-transform: uppercase;
 }
 
 
 /*
-nav ul li {
+nav ul li a {
     
-    display: inline;
+    background-color: darkorange;
 }
 */
 
@@ -111,9 +115,13 @@ nav ul.nav li.right {
     
 }
 
+
+
+/*
 nav ul.nav li.right a {
     //color: yellow;
 }
+*/
 
 
 .heading {
@@ -153,9 +161,11 @@ section.money {
     //margin: 100px auto;
 }
 
+/*
 li a {
-    text-transform: uppercase;
+   text-transform: uppercase;
 }
+*/
 
 .dollar {
     //text-align: center;
@@ -303,6 +313,7 @@ section.contact {
 .contactHead {
     
     text-align: center;
+    letter-spacing: 15px;
 }
 
 .fut {
@@ -336,6 +347,36 @@ nav ul.futUl {
     
 width: 100%;
     text-align: center;
+    
+}
+
+p.email {
+    
+    text-align: center;
+    
+}
+
+p.email a {
+    
+    font-size: 3rem;
+    text-decoration: none;
+    //color: royalblue;
+    color: white;
+}
+
+p.email button {
+    
+    border-radius: 5px;
+    //border-color: darkorange;
+    //border: none;
+    box-shadow: -1px -1px 3px 1px rgba(0, 0, 0, 0.4), 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Lobster', cursive;
+    font-style: normal;
+    
+}
+
+p.email button:hover {
+    background-color: green;
     
 }
 /*

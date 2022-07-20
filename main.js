@@ -1,4 +1,26 @@
-//    $('li').on('click', function() {
+const url = "https://www.worldtimeapi.org/timezone/Africa/Lagos";
+const updateDate = document.querySelector('.updated');
+//const loading = document.onload;
+//loading.addEventListerner('load', getDateTime);
+
+//function getDateTime() {
+    
+    fetch(url).then(function(res) {
+        console.log(res);
+        return res.json()
+        //res.JSON.parse(url);
+                    
+        }).then(function(data) {
+            console.log(data.data);
+            data.abbreviation.forEach(function(val) {
+                console.log(val);
+            });
+
+   });
+       
+//}
+
+//$('li').on('click', function() {
 //        $(this).animate({
 //            opacity: 0.0, 
 //            paddingLeft:'+=80'
@@ -48,3 +70,4 @@
 
 //alert(today);
 //update.addEventListener('load', updateToday, false);
+        
