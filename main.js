@@ -1,9 +1,9 @@
 const url = "https://www.worldtimeapi.org/timezone/Africa/Lagos";
 const updateDate = document.querySelector('.updated');
 //const loading = document.onload;
-//loading.addEventListerner('load', getDateTime);
+document.body.addEventListerner('load', getDateTime);
 
-//function getDateTime() {
+function getDateTime() {
     
     fetch(url).then(function(res) {
         console.log(res);
@@ -18,7 +18,7 @@ const updateDate = document.querySelector('.updated');
 
    });
        
-//}
+}
 
 //$('li').on('click', function() {
 //        $(this).animate({
