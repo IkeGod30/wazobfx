@@ -20,6 +20,12 @@ function getDateTime() {
        
 }
 
+// function updateTime () {
+//     document.getElementById("updated").innerHTML = '<p>${new Date.().toLocaleTimeString()}</p>';
+// };
+
+// setInterval(updateTime, 3000);  
+
 //$('li').on('click', function() {
 //        $(this).animate({
 //            opacity: 0.0, 
